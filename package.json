@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export -o build",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap"
@@ -65,5 +65,8 @@
       "preset": "styled-components",
       "includeClassNames": true
     }
+  },
+  "engines": {
+    "node": "16.13.0"
   }
 }

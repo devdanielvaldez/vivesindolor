@@ -6,10 +6,12 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     images: {
+      unoptimized: true,
       allowFutureImage: true,
     },
   },
   images: {
+    unoptimized: true,
     domains: [
       "https://maps.googleapis.com",
       "lh3.googleusercontent.com",
